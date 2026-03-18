@@ -1,19 +1,27 @@
-# savvy-aircraft-manager
+# Savvy Aircraft Data Manager
 
-This is a rudimentary app that will open a web browser and allow uploading engine log data to a Savvy Aviation Maintenance account. 
-It can store multiple aircraft/token combinations. This private information is stored in savvy_shop_vault.json
+A lightweight Python utility designed to manage multiple Savvy Aviation aircraft tokens and streamline the process of uploading engine data logs (`.jpi`, `.csv`, etc.) directly to Savvy's servers.
 
-Prerequisites:
+This app uses a web-based interface for maximum compatibility on Linux systems, bypassing GUI rendering issues.
 
-This application is optimized for Python 3.10+ and has been tested on Linux (Mint/Ubuntu) using the Flet web-view for maximum stability.
+---
 
-Dependencies:
+## ✈️ Features
+* **Multi-Aircraft Support:** Store nicknames and API tokens for various tail numbers.
+* **Secure Local Vault:** Tokens are stored locally on your machine in `savvy_shop_vault.json`.
+* **S3 Direct Upload:** Handles the complex "handshake" required to push logs to Savvy’s Amazon S3 storage.
+* **Linux Optimized:** Specifically tuned to run on Ubuntu/Mint/Debian environments.
 
-Flet (v0.21.2): Used for the UI framework. Note: Version 0.21.2 is required for stable FilePicker performance on Linux systems for some unknown reason.
+## 🛠️ Prerequisites
+* **Python 3.10+**
+* **Operating System:** Tested on Linux Mint/Ubuntu.
+* **Browser:** Chrome, Brave, or Firefox.
 
-Requests: Handles the API communication with Savvy Aviation and the S3 file upload.
+## 📦 Dependencies
+* **Flet (v0.21.2):** Chosen for its stable `FilePicker` implementation on Linux. (Note: Newer versions of Flet may require additional system-level GTK modules).
+* **Requests:** Used for API communication and data streaming.
 
-Quick Start:
+## 🚀 Quick Start
 
 # 1. Clone the repository
 git clone https://github.com/dbr112/savvy-aircraft-manager.git
