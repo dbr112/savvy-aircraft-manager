@@ -36,3 +36,13 @@ pip install -r requirements.txt
 
 # 4. Launch the manager
 python3 savvy_app_27a.py
+
+🔒 Security & Privacy
+API Tokens: Your tokens are private. This app stores them in savvy_shop_vault.json within the root folder.
+
+.gitignore: A .gitignore file is included to ensure your private vault and temporary upload fragments are never accidentally pushed to a public repository.
+
+Cleanup: The app automatically deletes temporary file fragments from the uploads/ folder immediately after a successful transfer.
+
+⚠️ Known Linux Issues
+If you see the message Failed to load module "xapp-gtk3-module", you can safely ignore it. This is a Linux theme warning that does not affect the app's functionality in the browser view.
