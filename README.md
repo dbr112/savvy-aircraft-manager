@@ -3,10 +3,12 @@
 This is a rudimentary app that will open a web browser and allow uploading engine log data to a Savvy Aviation Maintenance account. 
 It can store multiple aircraft/token combinations. This private information is stored in savvy_shop_vault.json
 
-Prerequisites
+Prerequisites:
+
 This application is optimized for Python 3.10+ and has been tested on Linux (Mint/Ubuntu) using the Flet web-view for maximum stability.
 
-Dependencies
+Dependencies:
+
 Flet (v0.21.2): Used for the UI framework. Note: Version 0.21.2 is required for stable FilePicker performance on Linux systems for some unknown reason.
 
 Requests: Handles the API communication with Savvy Aviation and the S3 file upload.
