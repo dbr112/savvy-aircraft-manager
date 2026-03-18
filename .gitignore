@@ -1,0 +1,10 @@
+# Ignore the local vault containing private tokens
+savvy_shop_vault.json
+
+# Ignore temporary upload fragments
+uploads/
+
+# Ignore python environment files
+venv/
+__pycache__/
+*.pyc
