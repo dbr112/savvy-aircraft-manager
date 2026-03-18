@@ -35,7 +35,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # 4. Launch the manager
-python3 savvy_app_27a.py
+python3 savvy_manager.py
 
 🔒 Security & Privacy
 API Tokens: Your tokens are private. This app stores them in savvy_shop_vault.json within the root folder.
